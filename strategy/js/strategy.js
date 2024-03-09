@@ -340,6 +340,7 @@ class SummaryListStrategy {
 
         element.innerHTML = data.reduce((accumulated, airport) => {
             return accumulated + `<div class="airport-card">
+                <div class="circle"></div>
                 <h2>${airport.name}</h2>
                 <p>${airport.country}</p>
             </div>`
@@ -356,6 +357,7 @@ class DetailListStrategy {
                 <h2>${airport.name}</h2>
                 <p>${airport.country}</p>
                 <p>${airport.info}</p>
+                <div class="circle"></div>
             </div>`
         }, "")
     }
@@ -367,6 +369,7 @@ class ImagesListStrategy {
 
         element.innerHTML = data.reduce((accumulated, airport) => {
             return accumulated + `<div class="airport-card">
+                <div class="circle"></div>
                 <h2>${airport.name}</h2>
                 <p>${airport.country}</p>
                 <img src="${airport.img}" width="200" height="200" />
