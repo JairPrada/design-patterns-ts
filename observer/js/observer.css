@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+New&display=swap");
+
+* {
+  font-family: "Courier New", monospace;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s; /* Ajusta la duración según tus necesidades */
+  background-color: transparent !important;
+}
+
+.form {
+  width: 50%;
+  padding: 50px 40px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.283);
+}
+
+.form input {
+  width: 100%;
+  margin-top: 20px;
+  border: 0.3px solid rgba(128, 128, 128, 0.498);
+  outline: none;
+  background-color: transparent;
+  font-family: "Courier New", monospace;
+  padding: 10px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: gray;
+}
+
+#observer,
+#observer2 {
+  margin: 10px auto;
+  padding: 50px 40px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.283);
+}

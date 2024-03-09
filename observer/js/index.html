@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./observer.css" />
+    <title>Observer</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <title>Observer</title>
+    <h1>Observer</h1>
+
+    <form class="form">
+      <label for="event-notify">Evento a notificar</label>
+      <br />
+      <input
+        type="text"
+        name="event-notify"
+        id="eventNotify"
+        oninput="change()"
+      />
+    </form>
+
+    
+    <div id="observer"></div>
+   
+    <div id="observer2"></div>
+ 
+    <script src="./observer.js"></script>
+  </body>
+</html>
