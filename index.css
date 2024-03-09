@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+New&display=swap");
+
+:root {
+  --background-color: #f2f9f8; /* Fondo claro y suave */
+  --primary-color: #5faeb1; /* Color principal proporcionado */
+  --secondary-color: beige; /* Tono pastel más claro para destacar suavemente */
+  --border-color: #bfe2e2; /* Gris claro para los bordes y separadores */
+  --text-color: #2d464c; /* Texto oscuro para una lectura cómoda */
+  --background-color-response: #ddf0f0; /* Color de fondo suave para las respuestas */
+}
+
+* {
+  font-family: "Courier New", monospace;
+}
+
+.main-container {
+  padding-top: 100px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.circle {
+  position: absolute;
+  padding: 5px;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transition: all 1s ease;
+  z-index: -10;
+}
+
+.container-example {
+  position: relative;
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+section {
+  width: 50%;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  margin: 20px 0px;
+  background-color: gray;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 1px;
+}
+
+details {
+  margin-top: 10px;
+  padding: 0px 20px;
+}
+
+summary {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+summary:hover .circle {
+  transform: scale(90);
+  background-color: var(--secondary-color);
+}
+
+details[open] summary {
+  background-color: var(--secondary-color);
+  transition: all 1s ease;
+}
